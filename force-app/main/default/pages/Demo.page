@@ -1,0 +1,10 @@
+<apex:page controller="Controller">
+  <apex:form >
+    <apex:pageBlock title="My Content" mode="edit">
+      <apex:pageBlockTable value="{!accountList}" var="item">
+        <apex:inputField value="{!item.name}"/>
+        <apex:inputField value="{!item.site}"/>
+      </apex:pageBlockTable>
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>
